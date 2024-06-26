@@ -1,0 +1,180 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("2968137.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+header {
+  background-color: #db1b95;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffc107;
+}
+
+.section-accueil,
+.section-produits {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.produit {
+  flex: 0 0 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(215, 16, 185, 0.779);
+}
+
+.produit img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.produit h3 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.produit p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.produit button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.produit button:hover {
+  background-color: #c2185b;
+}
+
+footer {
+  background-color: #bb0ce3;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  padding: 20px;
+}
+
+.citation {
+  position: relative;
+  font-family: "Lucida Calligraphy", cursive;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #333;
+  padding: 30px;
+  margin: 0;
+  border-left: 5px solid #e91e63;
+}
+
+.citation::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #e91e63;
+}
+
+.citation::after {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  color: #e91e63;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .produit {
+    flex-basis: 100%;
+  }
+}
+
+/* j'ai choisi un theme un peu feminin pour etre un peu originale et changer du model propose */
+/* j'ai veille a ce que le site soit responsive et comaptible avec tous les types d'ecran */
